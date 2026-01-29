@@ -72,6 +72,6 @@ def main():
             print("\nGracias por usar el cajero automatico. ¡Hasta pronto!")
             break
         else:
-            print("Opción no válida. Intente nuevamente.")
+            print("\nOpción no válida. Intente nuevamente.")
 
 main()
