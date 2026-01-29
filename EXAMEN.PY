@@ -10,7 +10,7 @@ Opcion(0-3)? """)
 def leer_opcion():
     op = input()
     while(not op.isdigit() or int(op) < 0  or int(op) > 3):
-        print("Error. Opcion invalida. Digite un numero de 0 a 3")
+        print("Error. Opción inválida. Dígite un numero de 0 a 3")
         input("Presione cualquier letra para continuar....")
         print("\n\n")
         menu()
@@ -30,7 +30,7 @@ def consultar_saldo(saldo):
 
 def depositar(saldo):
     try:
-        monto = float(input("Ingrese el monto a depositar: "))
+        monto = float(input("Ingrese el monto que desea depositar: "))
         if validar_monto(monto):
             saldo += monto
             print(f"\nDepositó con éxito el dinero!!!")
@@ -50,7 +50,7 @@ def retirar(saldo):
             print("\nFondos insuficientes para realizar el retiro del dinero.")
         else:
             saldo -= monto
-            print(f"\nSe retiro con exito el dinero!!!!")
+            print(f"\nSe retiró con éxito el dinero!!!!")
     except ValueError:
         print("\nError: Ingrese un valor numérico válido.")
     return saldo    
